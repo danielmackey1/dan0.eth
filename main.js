@@ -67124,9 +67124,9 @@
 						ensName: n
 					}), (0, Qi.jsx)(Zp, {
 						data: {
-							text: "Check out my Nimi page:",
+							text: "Check out my eth page:",
 							url: "https://".concat(n, ".limo"),
-							title: "Share Nimi"
+							title: "Share eth"
 						},
 						children: (0, Qi.jsx)(Am, {
 							children: (0, Qi.jsx)(pm, {})
