@@ -70109,10 +70109,10 @@
 						var t = this.parent.type;
 						if (0 === arguments.length) throw new Error("Validation failed: customNimiLinkValidator requires arguments");
 						if (!wi[t]) throw new Error("Invalid NimiLinkType");
-						if (t === wi.EMAIL) {
+						/* if (t === wi.EMAIL) {
 							if (!kI(e)) throw new Error("Invalid email address");
 							return !0
-						}
+						} */
 						if (t === wi.DISCORD) {
 							if (!xI(e)) throw new Error("Invalid Discord username");
 							return !0
