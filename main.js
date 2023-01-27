@@ -50499,6 +50499,7 @@
 			}
 		}
 
+		/* DM - intro logo */ 
 		function cp(e) {
 			var t = e.ensName,
 				r = e.image,
@@ -51776,17 +51777,6 @@
 				})))
 			},
 			Lm = __webpack_require__(62986);
-
-		function Zm(e) {
-			var t, r = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 100,
-				n = null;
-			return function() {
-				for (var i = arguments.length, a = new Array(i), o = 0; o < i; o++) a[o] = arguments[o];
-				t = a, null === n && (n = setTimeout((function() {
-					e.apply(void 0, (0, Ri.Z)(t)), n = null
-				}), r))
-			}
-		}
 
 		function Vm() {}
 		var zm = e.createContext(void 0),
@@ -70534,48 +70524,6 @@
 			return KI.apply(this, arguments)
 		}
 
-		function KI() {
-			return KI = (0, Im.Z)((0, Om.Z)().mark((function e(t) {
-				var r, n, i, a;
-				return (0, Om.Z)().wrap((function(e) {
-					for (;;) switch (e.prev = e.next) {
-						case 0:
-							return e.next = 2, this.getProvider();
-						case 2:
-							return r = e.sent, n = (0, gg.hexValue)(t), e.prev = 4, e.next = 7, r.request({
-								method: "wallet_switchEthereumChain",
-								params: [{
-									chainId: n
-								}]
-							});
-						case 7:
-							return e.abrupt("return", null !== (i = this.chains.find((function(e) {
-								return e.id === t
-							}))) && void 0 !== i ? i : {
-								id: t,
-								name: "Chain ".concat(n),
-								network: "".concat(n),
-								rpcUrls: {
-									default: ""
-								}
-							});
-						case 10:
-							if (e.prev = 10, e.t0 = e.catch(4), a = "string" === typeof e.t0 ? e.t0 : null === e.t0 || void 0 === e.t0 ? void 0 : e.t0.message, !/user rejected request/i.test(a)) {
-								e.next = 15;
-								break
-							}
-							throw new By(e.t0);
-						case 15:
-							throw new Dy(e.t0);
-						case 16:
-						case "end":
-							return e.stop()
-					}
-				}), e, this, [
-					[4, 10]
-				])
-			}))), KI.apply(this, arguments)
-		}
 		var YI = new WeakMap,
 			JI = new WeakMap,
 			QI = new WeakSet,
